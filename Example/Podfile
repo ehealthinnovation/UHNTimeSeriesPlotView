@@ -2,6 +2,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 target 'UHNTimeSeriesPlotView', :exclusive => true do
   pod "UHNTimeSeriesPlotView", :path => "../"
+  pod 'UHNDebug', :git => "git@github.ehealthinnovation.org:PHIT/UHNDebug.git"
 end
 
 target 'Tests', :exclusive => true do

@@ -6,6 +6,12 @@
 // project.
 
 
+// UHNDebug
+#define COCOAPODS_POD_AVAILABLE_UHNDebug
+#define COCOAPODS_VERSION_MAJOR_UHNDebug 0
+#define COCOAPODS_VERSION_MINOR_UHNDebug 1
+#define COCOAPODS_VERSION_PATCH_UHNDebug 0
+
 // UHNTimeSeriesPlotView
 #define COCOAPODS_POD_AVAILABLE_UHNTimeSeriesPlotView
 #define COCOAPODS_VERSION_MAJOR_UHNTimeSeriesPlotView 0

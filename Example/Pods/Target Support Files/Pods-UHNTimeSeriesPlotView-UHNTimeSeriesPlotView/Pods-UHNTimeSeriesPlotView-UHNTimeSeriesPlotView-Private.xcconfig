@@ -1,5 +1,5 @@
 #include "Pods-UHNTimeSeriesPlotView-UHNTimeSeriesPlotView.xcconfig"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Build" "${PODS_ROOT}/Headers/Build/UHNTimeSeriesPlotView" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Expecta" "${PODS_ROOT}/Headers/Public/Expecta+Snapshots" "${PODS_ROOT}/Headers/Public/FBSnapshotTestCase" "${PODS_ROOT}/Headers/Public/Specta" "${PODS_ROOT}/Headers/Public/UHNTimeSeriesPlotView"
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Build" "${PODS_ROOT}/Headers/Build/UHNTimeSeriesPlotView" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Expecta" "${PODS_ROOT}/Headers/Public/Expecta+Snapshots" "${PODS_ROOT}/Headers/Public/FBSnapshotTestCase" "${PODS_ROOT}/Headers/Public/Specta" "${PODS_ROOT}/Headers/Public/UHNDebug" "${PODS_ROOT}/Headers/Public/UHNTimeSeriesPlotView"
 OTHER_LDFLAGS = -ObjC
 PODS_ROOT = ${SRCROOT}
