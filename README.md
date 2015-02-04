@@ -20,7 +20,7 @@ it, simply add the following line to your Podfile:
 
 ## Author
 
-Nathaniel Hamming, nhamming@ehealthinnovation.org
+Nathaniel Hamming, nathaniel.hamming@gmail.com
 
 ## License
 
