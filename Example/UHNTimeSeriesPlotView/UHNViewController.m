@@ -38,7 +38,7 @@
                               yAxisLabel: nil
                        yAxisFormatString: nil
                                gridColor: [UIColor grayColor]
-                           gridFrameWidth: kDefaultStrokeWidth
+                          gridFrameWidth: kDefaultStrokeWidth
                            drawGridFrame: YES
                        fadeGridLineEdges: YES
                                lineColor: [UIColor whiteColor]
@@ -48,8 +48,6 @@
     self.plotView.samplingRateInHz = 1;
     self.plotView.windowMaxSize = 60;
     self.plotView.backgroundColor = [UIColor clearColor];
-    
-    [self.plotView generateRandomData: NO];
     
     [self.strokeWidthSlider setValue: self.plotView.lineWidth animated: YES];
 }

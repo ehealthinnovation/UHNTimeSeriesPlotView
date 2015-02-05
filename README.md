@@ -1,26 +1,55 @@
 # UHNTimeSeriesPlotView
 
-[![CI Status](http://img.shields.io/travis/Nathaniel Hamming/UHNTimeSeriesPlotView.svg?style=flat)](https://travis-ci.org/Nathaniel Hamming/UHNTimeSeriesPlotView)
-[![Version](https://img.shields.io/cocoapods/v/UHNTimeSeriesPlotView.svg?style=flat)](http://cocoadocs.org/docsets/UHNTimeSeriesPlotView)
-[![License](https://img.shields.io/cocoapods/l/UHNTimeSeriesPlotView.svg?style=flat)](http://cocoadocs.org/docsets/UHNTimeSeriesPlotView)
-[![Platform](https://img.shields.io/cocoapods/p/UHNTimeSeriesPlotView.svg?style=flat)](http://cocoadocs.org/docsets/UHNTimeSeriesPlotView)
+## Description
+
+Dynamic plot for real-time data collection. 
 
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+The UHNScrollingTimeSeriesPlotView can be included in IB or created programmatically. It is a subclass of the UHNGraphView, which in turn sublclassses UIView. The domainate class in this pod is `UHNScrollingTimeSeriesPlotView`, which is used to plot data collected in real-time.
+
+```
+  #import "UHNScrollingTimeSeriesPlotView.h"
+  @property(nonatomic,strong) IBOutlet UHNScrollingTimeSeriesPlotView *plotView;
+
+    [self.plotView setupPlotWithXAxisMin: 0.
+                                xAxisMax: 30.
+                              xMinorStep: 2
+                              xMajorStep: 10.
+                              xAxisLabel: nil
+                       xAxisFormatString: nil
+                                yAxisMin: 0.
+                                yAxisMax: 200.
+                              yMinorStep: 50.
+                              yMajorStep: 100.
+                              yAxisLabel: nil
+                       yAxisFormatString: nil
+                               gridColor: [UIColor grayColor]
+                          gridFrameWidth: 1.
+                           drawGridFrame: YES
+                       fadeGridLineEdges: YES
+                               lineColor: [UIColor whiteColor]
+                           lineHeadColor: [UIColor blueColor]
+                            andLineWidth: 1.];
+    self.plotView.plotRefreshRateInHz = 1.;
+    self.plotView.samplingRateInHz = 1.;
+    self.plotView.windowMaxSize = 60;
+    self.plotView.backgroundColor = [UIColor clearColor];
+
+    [self.plotView generateRandomData: YES];
+```
 
 ## Installation
 
-UHNTimeSeriesPlotView is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+To install UHNTimeSeriesPlotView in another project, simply add the following line to your Podfile:
 
-    pod "UHNTimeSeriesPlotView"
+    pod "UHNTimeSeriesPlotView", :git => "git@github.ehealthinnovation.org:JDRF/UHNTimeSeriesPlotView.git"
 
 ## Author
 
-Nathaniel Hamming, nathaniel.hamming@gmail.com
+Nathaniel Hamming, nhamming@ehealthinnovation.org
 
 ## License
 
