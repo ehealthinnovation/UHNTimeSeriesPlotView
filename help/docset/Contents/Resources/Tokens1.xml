@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UHNScrollingTimeSeriesPlotView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UHNScrollingTimeSeriesPlotView</TokenIdentifier>
+			<Abstract type="html">UHNScrollingTimeSeriesPlotView is a dynamic time series plot capable of displaying data collected in real-time. It is a subclass of the UHNGraphView with convenience methods for adding/removing data points, setting refresh of the plot (when the data is being collected faster then the UI can handle. This would present data points in blocks), etc.</Abstract>
+			<DeclaredIn>UHNScrollingTimeSeriesPlotView.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNScrollingTimeSeriesPlotView/setLineColor:</TokenIdentifier>
+			<Abstract type="html">The color of the line plotted. Default is the white color</Abstract>
+			<DeclaredIn>UHNScrollingTimeSeriesPlotView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIColor *lineColor</Declaration>
+			
+			
+			<Anchor>//api/name/lineColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNScrollingTimeSeriesPlotView/lineColor</TokenIdentifier>
+			<Abstract type="html">The color of the line plotted. Default is the white color</Abstract>
+			<DeclaredIn>UHNScrollingTimeSeriesPlotView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIColor *lineColor</Declaration>
+			
+			
+			<Anchor>//api/name/lineColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UHNScrollingTimeSeriesPlotView/lineColor</TokenIdentifier>
+			<Abstract type="html">The color of the line plotted. Default is the white color</Abstract>
+			<DeclaredIn>UHNScrollingTimeSeriesPlotView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIColor *lineColor</Declaration>
+			
+			
+			<Anchor>//api/name/lineColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNScrollingTimeSeriesPlotView/setLineHeadColor:</TokenIdentifier>
+			<Abstract type="html">The color of the line head. The line head color is a circular gradient from the specified color with alpha of 1 fading to an alpha of 0.</Abstract>
+			<DeclaredIn>UHNScrollingTimeSeriesPlotView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIColor *lineHeadColor</Declaration>
+			
+			
+			<Anchor>//api/name/lineHeadColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNScrollingTimeSeriesPlotView/lineHeadColor</TokenIdentifier>
+			<Abstract type="html">The color of the line head. The line head color is a circular gradient from the specified color with alpha of 1 fading to an alpha of 0.</Abstract>
+			<DeclaredIn>UHNScrollingTimeSeriesPlotView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIColor *lineHeadColor</Declaration>
+			
+			
+			<Anchor>//api/name/lineHeadColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UHNScrollingTimeSeriesPlotView/lineHeadColor</TokenIdentifier>
+			<Abstract type="html">The color of the line head. The line head color is a circular gradient from the specified color with alpha of 1 fading to an alpha of 0.</Abstract>
+			<DeclaredIn>UHNScrollingTimeSeriesPlotView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIColor *lineHeadColor</Declaration>
+			
+			
+			<Anchor>//api/name/lineHeadColor</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNScrollingTimeSeriesPlotView/setLineWidth:</TokenIdentifier>
+			<Abstract type="html">The width of the line plotted. Default value is 1.</Abstract>
+			<DeclaredIn>UHNScrollingTimeSeriesPlotView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat lineWidth</Declaration>
+			
+			
+			<Anchor>//api/name/lineWidth</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNScrollingTimeSeriesPlotView/lineWidth</TokenIdentifier>
+			<Abstract type="html">The width of the line plotted. Default value is 1.</Abstract>
+			<DeclaredIn>UHNScrollingTimeSeriesPlotView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat lineWidth</Declaration>
+			
+			
+			<Anchor>//api/name/lineWidth</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UHNScrollingTimeSeriesPlotView/lineWidth</TokenIdentifier>
+			<Abstract type="html">The width of the line plotted. Default value is 1.</Abstract>
+			<DeclaredIn>UHNScrollingTimeSeriesPlotView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat lineWidth</Declaration>
+			
+			
+			<Anchor>//api/name/lineWidth</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNScrollingTimeSeriesPlotView/setPlotRefreshRateInHz:</TokenIdentifier>
+			<Abstract type="html">The refresh rate of the plot in Hz. If this slower than the sampling rate, the plot will refresh with blocks of data. Making this value faster than the sampling rate is not appropriate, as the plot would refresh without any additional data. Default value is 1 Hz.</Abstract>
+			<DeclaredIn>UHNScrollingTimeSeriesPlotView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) double plotRefreshRateInHz</Declaration>
+			
+			
+			<Anchor>//api/name/plotRefreshRateInHz</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNScrollingTimeSeriesPlotView/plotRefreshRateInHz</TokenIdentifier>
+			<Abstract type="html">The refresh rate of the plot in Hz. If this slower than the sampling rate, the plot will refresh with blocks of data. Making this value faster than the sampling rate is not appropriate, as the plot would refresh without any additional data. Default value is 1 Hz.</Abstract>
+			<DeclaredIn>UHNScrollingTimeSeriesPlotView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) double plotRefreshRateInHz</Declaration>
+			
+			
+			<Anchor>//api/name/plotRefreshRateInHz</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UHNScrollingTimeSeriesPlotView/plotRefreshRateInHz</TokenIdentifier>
+			<Abstract type="html">The refresh rate of the plot in Hz. If this slower than the sampling rate, the plot will refresh with blocks of data. Making this value faster than the sampling rate is not appropriate, as the plot would refresh without any additional data. Default value is 1 Hz.</Abstract>
+			<DeclaredIn>UHNScrollingTimeSeriesPlotView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) double plotRefreshRateInHz</Declaration>
+			
+			
+			<Anchor>//api/name/plotRefreshRateInHz</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNScrollingTimeSeriesPlotView/setSamplingRateInHz:</TokenIdentifier>
+			<Abstract type="html">The sampling rate of the collected data in Hz. This value is needed to appropriately visualize the data points on a time-based scale. Default value is 1 Hz.</Abstract>
+			<DeclaredIn>UHNScrollingTimeSeriesPlotView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) double samplingRateInHz</Declaration>
+			
+			
+			<Anchor>//api/name/samplingRateInHz</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNScrollingTimeSeriesPlotView/samplingRateInHz</TokenIdentifier>
+			<Abstract type="html">The sampling rate of the collected data in Hz. This value is needed to appropriately visualize the data points on a time-based scale. Default value is 1 Hz.</Abstract>
+			<DeclaredIn>UHNScrollingTimeSeriesPlotView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) double samplingRateInHz</Declaration>
+			
+			
+			<Anchor>//api/name/samplingRateInHz</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UHNScrollingTimeSeriesPlotView/samplingRateInHz</TokenIdentifier>
+			<Abstract type="html">The sampling rate of the collected data in Hz. This value is needed to appropriately visualize the data points on a time-based scale. Default value is 1 Hz.</Abstract>
+			<DeclaredIn>UHNScrollingTimeSeriesPlotView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) double samplingRateInHz</Declaration>
+			
+			
+			<Anchor>//api/name/samplingRateInHz</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNScrollingTimeSeriesPlotView/setWindowMaxSize:</TokenIdentifier>
+			<Abstract type="html">The max size of the data point window, which indicates how many data points should be stored in memory before being dropped. When a UIScrollView container is used and the max window size is greater than the x-axis range, the plot view will extend past the UIScrollView frame and allow for historical viewing of data.</Abstract>
+			<DeclaredIn>UHNScrollingTimeSeriesPlotView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger windowMaxSize</Declaration>
+			
+			
+			<Anchor>//api/name/windowMaxSize</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNScrollingTimeSeriesPlotView/windowMaxSize</TokenIdentifier>
+			<Abstract type="html">The max size of the data point window, which indicates how many data points should be stored in memory before being dropped. When a UIScrollView container is used and the max window size is greater than the x-axis range, the plot view will extend past the UIScrollView frame and allow for historical viewing of data.</Abstract>
+			<DeclaredIn>UHNScrollingTimeSeriesPlotView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger windowMaxSize</Declaration>
+			
+			
+			<Anchor>//api/name/windowMaxSize</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UHNScrollingTimeSeriesPlotView/windowMaxSize</TokenIdentifier>
+			<Abstract type="html">The max size of the data point window, which indicates how many data points should be stored in memory before being dropped. When a UIScrollView container is used and the max window size is greater than the x-axis range, the plot view will extend past the UIScrollView frame and allow for historical viewing of data.</Abstract>
+			<DeclaredIn>UHNScrollingTimeSeriesPlotView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger windowMaxSize</Declaration>
+			
+			
+			<Anchor>//api/name/windowMaxSize</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNScrollingTimeSeriesPlotView/updatePlot</TokenIdentifier>
+			<Abstract type="html">Allows for manual plot updates. This method could be linked to a timer or specific actions</Abstract>
+			<DeclaredIn>UHNScrollingTimeSeriesPlotView.h</DeclaredIn>
+			
+			<Declaration>- (void)updatePlot</Declaration>
+			
+			
+			<Anchor>//api/name/updatePlot</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNScrollingTimeSeriesPlotView/generateRandomData:</TokenIdentifier>
+			<Abstract type="html">Generate random data to be plotted. This should be used as a visual test to ensure the plot view is acting correctly.</Abstract>
+			<DeclaredIn>UHNScrollingTimeSeriesPlotView.h</DeclaredIn>
+			
+			<Declaration>- (void)generateRandomData:(BOOL)on</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>on</Name>
+					<Abstract type="html">Specifies is data generation should be on</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/generateRandomData:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNScrollingTimeSeriesPlotView/addDataPoint:</TokenIdentifier>
+			<Abstract type="html">Add a single data point to the plot.</Abstract>
+			<DeclaredIn>UHNScrollingTimeSeriesPlotView.h</DeclaredIn>
+			
+			<Declaration>- (void)addDataPoint:(NSNumber *)dataPoint</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dataPoint</Name>
+					<Abstract type="html">The data point to be added to the plot</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addDataPoint:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNScrollingTimeSeriesPlotView/addDataPoints:</TokenIdentifier>
+			<Abstract type="html">Add an array of data points to the plot. The data in the array should be ordered from oldest to newest. The array must contain NSNumber objects.</Abstract>
+			<DeclaredIn>UHNScrollingTimeSeriesPlotView.h</DeclaredIn>
+			
+			<Declaration>- (void)addDataPoints:(NSArray *)dataPoints</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dataPoints</Name>
+					<Abstract type="html">Array of the data points (NSNumber) to be added to the plot.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addDataPoints:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNScrollingTimeSeriesPlotView/plotData:</TokenIdentifier>
+			<Abstract type="html">First clear the plot and then plot the data in the array. The data in the array should be ordered from oldest to newest. The array must contain NSNumber objects.</Abstract>
+			<DeclaredIn>UHNScrollingTimeSeriesPlotView.h</DeclaredIn>
+			
+			<Declaration>- (void)plotData:(NSArray *)data</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">Array of the data points (NSNumber) to be added to the plot.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/plotData:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNScrollingTimeSeriesPlotView/removeAllDataPoints</TokenIdentifier>
+			<Abstract type="html">Remove all the data points from the plot.</Abstract>
+			<DeclaredIn>UHNScrollingTimeSeriesPlotView.h</DeclaredIn>
+			
+			<Declaration>- (void)removeAllDataPoints</Declaration>
+			
+			
+			<Anchor>//api/name/removeAllDataPoints</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNScrollingTimeSeriesPlotView/shouldRefresh:</TokenIdentifier>
+			<Abstract type="html">Used to set an independent refresh cycle for the plot, based on the plot refresh rate. This should be used when the data collected is too fast for the UI.</Abstract>
+			<DeclaredIn>UHNScrollingTimeSeriesPlotView.h</DeclaredIn>
+			
+			<Declaration>- (void)shouldRefresh:(BOOL)refresh</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>refresh</Name>
+					<Abstract type="html">Specifies if the plot should run indepent refresh cycle</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/shouldRefresh:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNScrollingTimeSeriesPlotView/hidePlot:</TokenIdentifier>
+			<Abstract type="html">Hides the plot</Abstract>
+			<DeclaredIn>UHNScrollingTimeSeriesPlotView.h</DeclaredIn>
+			
+			<Declaration>- (void)hidePlot:(BOOL)hidden</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>hidden</Name>
+					<Abstract type="html">Specifies if the plot should be hidden</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/hidePlot:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNScrollingTimeSeriesPlotView/setupPlotWithXAxisMin:xAxisMax:xMinorStep:xMajorStep:xAxisLabel:xAxisFormatString:yAxisMin:yAxisMax:yMinorStep:yMajorStep:yAxisLabel:yAxisFormatString:gridColor:gridFrameWidth:drawGridFrame:fadeGridLineEdges:lineColor:lineHeadColor:andLineWidth:</TokenIdentifier>
+			<Abstract type="html">Construction of the plot view. This method should be called after the plot view has been instantiated. It includes all relevant details of the plot to be visualized and present data.</Abstract>
+			<DeclaredIn>UHNScrollingTimeSeriesPlotView.h</DeclaredIn>
+			
+			<Declaration>- (void)setupPlotWithXAxisMin:(CGFloat)xMin xAxisMax:(CGFloat)xMax xMinorStep:(CGFloat)xMinorStep xMajorStep:(CGFloat)xMajorStep xAxisLabel:(NSString *)xLabel xAxisFormatString:(NSString *)xFormatString yAxisMin:(CGFloat)yMin yAxisMax:(CGFloat)yMax yMinorStep:(CGFloat)yMinorStep yMajorStep:(CGFloat)yMajorStep yAxisLabel:(NSString *)yLabel yAxisFormatString:(NSString *)yFormatString gridColor:(UIColor *)gridColor gridFrameWidth:(CGFloat)gridFrameWidth drawGridFrame:(BOOL)drawGridFrame fadeGridLineEdges:(BOOL)fadeGridLineEdges lineColor:(UIColor *)lineColor lineHeadColor:(UIColor *)lineHeadColor andLineWidth:(CGFloat)lineWidth</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>xMin</Name>
+					<Abstract type="html">The minimum value of the x-axis range</Abstract>
+				</Parameter><Parameter>
+					<Name>xMax</Name>
+					<Abstract type="html">The maximum value of the x-axis range</Abstract>
+				</Parameter><Parameter>
+					<Name>xMinorStep</Name>
+					<Abstract type="html">The minor step of the x-axis and used to visual x-axis minor ticks on the graph grid</Abstract>
+				</Parameter><Parameter>
+					<Name>xMajorStep</Name>
+					<Abstract type="html">The major step of the x-axis and used to visual x-axis major ticks on the graph grid</Abstract>
+				</Parameter><Parameter>
+					<Name>xLabel</Name>
+					<Abstract type="html">The unit label for the x-axis</Abstract>
+				</Parameter><Parameter>
+					<Name>xFormatString</Name>
+					<Abstract type="html">The format string for presenting the x-axis major tick value on the graph grid</Abstract>
+				</Parameter><Parameter>
+					<Name>yMin</Name>
+					<Abstract type="html">The minimum value of the y-axis range</Abstract>
+				</Parameter><Parameter>
+					<Name>yMax</Name>
+					<Abstract type="html">The maximum value of the y-axis range</Abstract>
+				</Parameter><Parameter>
+					<Name>yMinorStep</Name>
+					<Abstract type="html">The minor step of the y-axis and used to visual y-axis minor ticks on the graph grid</Abstract>
+				</Parameter><Parameter>
+					<Name>yMajorStep</Name>
+					<Abstract type="html">The major step of the y-axis and used to visual y-axis major ticks on the graph grid</Abstract>
+				</Parameter><Parameter>
+					<Name>yLabel</Name>
+					<Abstract type="html">The unit label for the y-axis</Abstract>
+				</Parameter><Parameter>
+					<Name>yFormatString</Name>
+					<Abstract type="html">The format string for presenting the y-axis major tick value on the graph grid</Abstract>
+				</Parameter><Parameter>
+					<Name>gridColor</Name>
+					<Abstract type="html">The color of the graph grid lines</Abstract>
+				</Parameter><Parameter>
+					<Name>gridFrameWidth</Name>
+					<Abstract type="html">The line width of the graph grid frame</Abstract>
+				</Parameter><Parameter>
+					<Name>drawGridFrame</Name>
+					<Abstract type="html">Specifies if the frame of the graph grid shoul be drawn</Abstract>
+				</Parameter><Parameter>
+					<Name>fadeGridLineEdges</Name>
+					<Abstract type="html">Specifies if the graph grid lines tips should be faded</Abstract>
+				</Parameter><Parameter>
+					<Name>lineColor</Name>
+					<Abstract type="html">Specifies the color of the line plotted</Abstract>
+				</Parameter><Parameter>
+					<Name>lineHeadColor</Name>
+					<Abstract type="html">Specifies the color of the line head. The line head is a circular gradient that fades from an alpha of 1 to 0</Abstract>
+				</Parameter><Parameter>
+					<Name>lineWidth</Name>
+					<Abstract type="html">The width of the line plotted</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setupPlotWithXAxisMin:xAxisMax:xMinorStep:xMajorStep:xAxisLabel:xAxisFormatString:yAxisMin:yAxisMax:yMinorStep:yMajorStep:yAxisLabel:yAxisFormatString:gridColor:gridFrameWidth:drawGridFrame:fadeGridLineEdges:lineColor:lineHeadColor:andLineWidth:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

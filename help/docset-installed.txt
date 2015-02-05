@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/nhamming/Library/Developer/Shared/Documentation/DocSets/org.ehealthinnovation.UHNTimeSeriesPlotView.docset
+Time: 2015-02-05 18:32:15 +0000

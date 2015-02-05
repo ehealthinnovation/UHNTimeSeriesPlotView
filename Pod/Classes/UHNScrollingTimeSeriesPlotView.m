@@ -37,8 +37,8 @@
         self.dataPoints = [NSMutableArray array];
         
         //Load defaults
-        self.plotRefreshRateInHz = 10;
-        self.samplingRateInHz = 512;
+        self.plotRefreshRateInHz = 1;
+        self.samplingRateInHz = 1;
         self.lineWidth = 1;
         self.lineColor = [UIColor whiteColor];
         
@@ -59,16 +59,16 @@
                    yAxisLabel: (NSString*)yLabel
             yAxisFormatString: (NSString*)yFormatString
                     gridColor: (UIColor*)gridColor
-                gridLineWidth: (CGFloat)gridFrameWidth
+               gridFrameWidth: (CGFloat)gridFrameWidth
                 drawGridFrame: (BOOL)drawGridFrame
             fadeGridLineEdges: (BOOL)fadeGridLineEdges
                     lineColor: (UIColor*)color 
                 lineHeadColor: (UIColor*)headColor
-                 andLineWidth: (CGFloat)width
+                 andLineWidth: (CGFloat)lineWidth
 {
     self.lineColor = color;
     self.lineHeadColor = headColor;
-    self.lineWidth = width;
+    self.lineWidth = lineWidth;
     
     // Setup x-axis
     if (!self.xScale) 
@@ -131,7 +131,7 @@
 
 - (void)addRandomDataPoint
 {
-    NSNumber *randomValue = [NSNumber numberWithInt: arc4random() % [self.yScale.max integerValue]];
+    NSNumber *randomValue = [NSNumber numberWithInteger: (arc4random() % ([self.yScale.max integerValue] - [self.yScale.min integerValue]) + [self.yScale.min integerValue])];
     [self addDataPoint: randomValue];
 }
 

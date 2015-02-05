@@ -38,7 +38,7 @@
                               yAxisLabel: nil
                        yAxisFormatString: nil
                                gridColor: [UIColor grayColor]
-                           gridLineWidth: kDefaultStrokeWidth
+                           gridFrameWidth: kDefaultStrokeWidth
                            drawGridFrame: YES
                        fadeGridLineEdges: YES
                                lineColor: [UIColor whiteColor]
