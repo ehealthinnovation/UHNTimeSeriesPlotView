@@ -40,6 +40,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		488ED14E1A84F92600FF7113 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48DE09351A83D8720039C37F;
+			remoteInfo = Documentation;
+		};
 		6003F5B3195388D20070C39A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6003F582195388D10070C39A /* Project object */;
@@ -222,6 +229,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				488ED14F1A84F92600FF7113 /* PBXTargetDependency */,
 			);
 			name = UHNTimeSeriesPlotView;
 			productName = UHNTimeSeriesPlotView;
@@ -405,6 +413,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		488ED14F1A84F92600FF7113 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48DE09351A83D8720039C37F /* Documentation */;
+			targetProxy = 488ED14E1A84F92600FF7113 /* PBXContainerItemProxy */;
+		};
 		6003F5B4195388D20070C39A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6003F589195388D20070C39A /* UHNTimeSeriesPlotView */;
@@ -606,6 +619,7 @@
 				48DE09371A83D8720039C37F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6003F585195388D10070C39A /* Build configuration list for PBXProject "UHNTimeSeriesPlotView" */ = {
 			isa = XCConfigurationList;
