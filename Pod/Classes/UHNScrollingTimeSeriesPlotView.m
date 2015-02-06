@@ -14,10 +14,10 @@
 #import "UHNDebug.h"
 
 @interface UHNScrollingTimeSeriesPlotView() <UIScrollViewDelegate>
-@property (nonatomic, retain) IBOutlet UIScrollView *container;
-@property (nonatomic, retain) NSMutableArray *dataPoints;
-@property (nonatomic, retain) NSTimer *dataGeneratorTimer;
-@property (nonatomic, retain) NSTimer *plotUpdateTimer;
+@property (nonatomic, strong) IBOutlet UIScrollView *container;
+@property (nonatomic, strong) NSMutableArray *dataPoints;
+@property (nonatomic, strong) NSTimer *dataGeneratorTimer;
+@property (nonatomic, strong) NSTimer *plotUpdateTimer;
 @property (nonatomic, assign) CGFloat xOffsetPerSample;
 @property (nonatomic, assign) CGFloat yOffsetPerUnit;
 @property (nonatomic, assign) CGFloat yOffsetForZeroLine;
@@ -29,21 +29,39 @@
 
 #pragma mark - Lifecycle Methods
 
+- (instancetype)init
+{
+    [NSException raise:NSInvalidArgumentException
+                format:@"%s: Use %@ instead", __PRETTY_FUNCTION__, NSStringFromSelector(@selector(initWithFrame:))];
+    return nil;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    if (self = [super initWithFrame: frame])
+    {
+        [self setDefaults];
+    }
+    return self;
+}
+
 - (id)initWithCoder:(NSCoder *)aDecoder 
 {
     self = [super initWithCoder: aDecoder];
     if (self) 
     {
-        self.dataPoints = [NSMutableArray array];
-        
-        //Load defaults
-        self.plotRefreshRateInHz = 1;
-        self.samplingRateInHz = 1;
-        self.lineWidth = 1;
-        self.lineColor = [UIColor whiteColor];
-        
+        [self setDefaults];
     }
     return self;    
+}
+
+- (void)setDefaults;
+{
+    //Load defaults
+    self.plotRefreshRateInHz = 1;
+    self.samplingRateInHz = 1;
+    self.lineWidth = 1;
+    self.lineColor = [UIColor whiteColor];
 }
 
 - (void)setupPlotWithXAxisMin: (CGFloat)xMin
@@ -137,16 +155,14 @@
 
 - (void)addDataPoint: (NSNumber*)dataPoint
 {
-    [self.dataPoints addObject: dataPoint];
-    if ([self.dataPoints count] > self.windowMaxSize) 
-    {
-        [self.dataPoints removeObjectAtIndex: 0];
-    }
-    [self updatePlot];
+    [self addDataPoints: @[dataPoint]];
 }
 
 - (void)addDataPoints:(NSArray *)someDataPoints
 {
+    if (!self.dataPoints) {
+        self.dataPoints = [NSMutableArray array];
+    }
     [self.dataPoints addObjectsFromArray: someDataPoints];
     NSInteger diff = [self.dataPoints count] - self.windowMaxSize;
     if (diff > 0) 
@@ -158,9 +174,8 @@
 
 - (void)plotData: (NSArray*)data
 {
-    self.dataPoints = nil;
-    self.dataPoints = [NSMutableArray arrayWithArray: data];
-    [self updatePlot];
+    [self removeAllDataPoints];
+    [self addDataPoints: data];
 }
 
 - (void)setSamplingRateInHz:(double)aSamplingRateInHz

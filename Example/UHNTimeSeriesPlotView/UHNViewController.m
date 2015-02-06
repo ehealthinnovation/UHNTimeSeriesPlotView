@@ -39,7 +39,7 @@
                        yAxisFormatString: nil
                                gridColor: [UIColor grayColor]
                           gridFrameWidth: kDefaultStrokeWidth
-                           drawGridFrame: YES
+                           drawGridFrame: NO
                        fadeGridLineEdges: YES
                                lineColor: [UIColor whiteColor]
                            lineHeadColor: [UIColor blueColor]
