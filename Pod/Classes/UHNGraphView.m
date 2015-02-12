@@ -15,10 +15,24 @@
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
 	if (self = [super initWithCoder: aDecoder]) {
-		self.decorations = [NSMutableArray array];
-        self.updateGridWithPlot = YES;
-	}
+        [self setup];
+    }
 	return self;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    if (self = [super initWithFrame: frame])
+    {
+        [self setup];
+    }
+    return self;
+}
+
+- (void)setup
+{
+    self.decorations = [NSMutableArray array];
+    self.updateGridWithPlot = YES;
 }
 
 #pragma mark - Subview routines

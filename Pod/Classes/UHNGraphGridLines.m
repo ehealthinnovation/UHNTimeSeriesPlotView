@@ -13,27 +13,32 @@
 #import "UHNYRealScale.h"
 
 @interface UHNGraphGridLines()
-- (void)drawGrayGridLineGradientsForContext: (CGContextRef)context inRect: (CGRect)rect;
+- (void)drawGridLineGradientsForContext: (CGContextRef)context inRect: (CGRect)rect;
 @end
 
 @implementation UHNGraphGridLines
 
 - (id)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-        self.drawsFrame = NO;
+        [self setup];
     }
     return self;
 }
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
     if (self = [super initWithCoder: aDecoder]) {
-        // Load defaults
-        self.fadeGridLineEdges = NO;
-        self.drawsFrame = NO;
-        self.frameLineWidth = 1.0;
-        self.frameColor = [UIColor lightGrayColor];
+        [self setup];
     }
     return self;
+}
+
+- (void)setup
+{
+    // Load defaults
+    self.fadeGridLineEdges = NO;
+    self.drawsFrame = NO;
+    self.frameLineWidth = 1.0;
+    self.frameColor = [UIColor lightGrayColor];
 }
 
 - (void)drawRect:(CGRect)rect {
@@ -56,7 +61,7 @@
                 if (self.fadeGridLineEdges)
                 {
                     CGRect gradientRect = CGRectMake([self.graph.xScale screenValueForDomain: value],  self.bounds.origin.y,  self.xMinorScaleLineWidth,  self.bounds.origin.y + self.bounds.size.height);
-                    [self drawGrayGridLineGradientsForContext: context inRect: gradientRect];
+                    [self drawGridLineGradientsForContext: context inRect: gradientRect];
                 }
                 else
                 {
@@ -73,7 +78,7 @@
                 if (self.fadeGridLineEdges) 
                 {
                     CGRect gradientRect = CGRectMake([self.graph.xScale screenValueForDomain: value],  self.bounds.origin.y,  self.xMajorScaleLineWidth,  self.bounds.origin.y + self.bounds.size.height);
-                    [self drawGrayGridLineGradientsForContext: context inRect: gradientRect];
+                    [self drawGridLineGradientsForContext: context inRect: gradientRect];
                 }
                 else
                 {
@@ -90,7 +95,7 @@
                 if (self.fadeGridLineEdges) 
                 {
                     CGRect gradientRect = CGRectMake(self.bounds.origin.x, [self.graph.yScale screenValueForDomain: value],  self.bounds.origin.x + self.bounds.size.width, self.yMinorScaleLineWidth);
-                    [self drawGrayGridLineGradientsForContext: context inRect: gradientRect];
+                    [self drawGridLineGradientsForContext: context inRect: gradientRect];
                 }
                 else 
                 {
@@ -107,7 +112,7 @@
                 if (self.fadeGridLineEdges) 
                 {
                     CGRect gradientRect = CGRectMake(self.bounds.origin.x, [self.graph.yScale screenValueForDomain: value],  self.bounds.origin.x + self.bounds.size.width, self.yMajorScaleLineWidth);
-                    [self drawGrayGridLineGradientsForContext: context inRect: gradientRect];
+                    [self drawGridLineGradientsForContext: context inRect: gradientRect];
                 }
                 else 
                 {
@@ -121,7 +126,7 @@
     }
 }
 
-- (void)drawGrayGridLineGradientsForContext: (CGContextRef)context inRect: (CGRect)rect
+- (void)drawGridLineGradientsForContext: (CGContextRef)context inRect: (CGRect)rect
 {
     // add rect to draw gradient in
     CGContextSaveGState(context);
@@ -129,16 +134,16 @@
     CGContextClip(context);
     
     // create gradient
-    CGColorSpaceRef myColorspace=CGColorSpaceCreateDeviceGray();
-    CGFloat whiteComponent, alphaComponent;
-    [self.gridLineColor getWhite: &whiteComponent alpha: &alphaComponent];
+    CGColorSpaceRef myColorspace=CGColorSpaceCreateDeviceRGB();
+    CGFloat redComponent, greenComponent, blueComponent, alphaComponent;
+    [self.gridLineColor getRed: &redComponent green: &greenComponent blue: &blueComponent alpha: &alphaComponent];
 
     size_t num_locations = 5;
-    CGFloat components[4 * 5] = { whiteComponent, 0.0,
-        whiteComponent, 0.5,
-        whiteComponent, 0.7,
-        whiteComponent, 0.5,
-        whiteComponent, 0.0};
+    CGFloat components[] = { redComponent, greenComponent, blueComponent, 0.0,
+        redComponent, greenComponent, blueComponent, 0.5,
+        redComponent, greenComponent, blueComponent, 0.7,
+        redComponent, greenComponent, blueComponent, 0.5,
+        redComponent, greenComponent, blueComponent, 0.0};
 
     CGGradientRef gradient = CGGradientCreateWithColorComponents(myColorspace, components, nil, num_locations);
     
