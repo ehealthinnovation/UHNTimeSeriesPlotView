@@ -342,7 +342,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#appledoc Xcode script\n# Start constants\ncompany=\"Centre for Global eHealth Innovation\";\ncompanyID=\"org.ehealthinnovation\";\ncompanyURL=\"http://ehealthinnovation.com\";\ntarget=\"iphoneos\";\n#target=\"macosx\";\noutputPath=\"../help\";\n# End constants\n/usr/local/bin/appledoc \\\n--project-name \"${PROJECT_NAME}\" \\\n--project-company \"${company}\" \\\n--company-id \"${companyID}\" \\\n--output \"${outputPath}\" \\\n--docset-platform-family \"${target}\" \\\n--logformat xcode \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--exit-threshold 2 \\\n--ignore .m \\\n--ignore FBSnapshotTestCase \\\n--ignore Expecta \\\n--ignore Specta \\\n\"${PROJECT_DIR}\"";
+			shellScript = "#appledoc Xcode script\n# Start constants\ncompany=\"Centre for Global eHealth Innovation\";\ncompanyID=\"org.ehealthinnovation\";\ncompanyURL=\"http://ehealthinnovation.com\";\ntarget=\"iphoneos\";\n#target=\"macosx\";\noutputPath=\"../docs\";\n# End constants\n/usr/local/bin/appledoc \\\n--project-name \"${PROJECT_NAME}\" \\\n--project-company \"${company}\" \\\n--company-id \"${companyID}\" \\\n--output \"${outputPath}\" \\\n--docset-platform-family \"${target}\" \\\n--logformat xcode \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--exit-threshold 2 \\\n--ignore .m \\\n--ignore FBSnapshotTestCase \\\n--ignore Expecta \\\n--ignore Specta \\\n\"${PROJECT_DIR}\"";
 		};
 		4C1641C1D75A548EE7158817 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
