@@ -182,15 +182,15 @@
 {
     _samplingRateInHz = aSamplingRateInHz;
     self.xOffsetPerSample = [self.xScale screenValueForDomain: [NSNumber numberWithDouble: (1 / self.samplingRateInHz)]];
-    LogDebugEvent(@"x offset per sample (%f sec/sample) in pixels: %f", (1/self.samplingRateInHz), self.xOffsetPerSample);
+//    NSLog(@"x offset per sample (%f sec/sample) in pixels: %f", (1/self.samplingRateInHz), self.xOffsetPerSample);
     self.yOffsetPerUnit = [self.yScale screenValueForDomain: [NSNumber numberWithDouble: [self.yScale.max doubleValue] - 1]];
-    LogDebugEvent(@"y offset for 1 unit: %f", self.yOffsetPerUnit);
+//    NSLog(@"y offset for 1 unit: %f", self.yOffsetPerUnit);
     self.yOffsetForZeroLine = [self.yScale screenValueForDomain: [NSNumber numberWithInt: 0]];
-    LogDebugEvent(@"y offset for 0 line: %f", self.yOffsetForZeroLine);
+//    NSLog(@"y offset for 0 line: %f", self.yOffsetForZeroLine);
     
     self.windowMaxSize = _samplingRateInHz * [self.xScale.max doubleValue];
-    LogDebugEvent(@"array max size %ld", (long)self.windowMaxSize);
-    LogDebugEvent(@"refresh rate: %f secs (%f samples/refresh)", 1/self.plotRefreshRateInHz, self.samplingRateInHz/self.plotRefreshRateInHz);
+//    NSLog(@"array max size %ld", (long)self.windowMaxSize);
+//    NSLog(@"refresh rate: %f secs (%f samples/refresh)", 1/self.plotRefreshRateInHz, self.samplingRateInHz/self.plotRefreshRateInHz);
     
     // only store 4 windows of data
     self.dataMaxSize = 4 * self.windowMaxSize;

@@ -19,11 +19,10 @@ Pod::Spec.new do |s|
                        Current implementation is a fixed window size, but intention is to 
                        add scrolling to view historical data.
                        DESC
-  s.homepage         = "https://github.eahlthinnovation.org/JDRF/UHNTimeSeriesPlotView"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "http://github.com/uhnmdi/UHNTimeSeriesPlotView"
   s.license          = 'MIT'
   s.author           = { "Nathaniel Hamming" => "nathaniel.hamming@gmail.com" }
-  s.source           = { :git => "https://github.eahlthinnovation.org/JDRF/UHNTimeSeriesPlotView.git", :tag => s.version.to_s }
+  s.source           = { :git => "http://github.com/uhnmdi/UHNTimeSeriesPlotView.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/NAteHAm80'
 
   s.platform     = :ios, '7.0'
@@ -34,7 +33,6 @@ Pod::Spec.new do |s|
     'UHNTimeSeriesPlotView' => ['Pod/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.public_header_files = 'Pod/Classes/**/*.h'
+  s.frameworks = 'UIKit'
 end

@@ -45,7 +45,11 @@ The UHNScrollingTimeSeriesPlotView can be included in IB or created programmatic
 
 To install UHNTimeSeriesPlotView in another project, simply add the following line to your Podfile:
 
-    pod "UHNTimeSeriesPlotView", :git => "git@github.ehealthinnovation.org:JDRF/UHNTimeSeriesPlotView.git"
+    pod "UHNTimeSeriesPlotView"
+    
+## Documentation
+
+`appledoc` of the pod can be found at `./doc/html/index.html`
 
 ## Author
 
