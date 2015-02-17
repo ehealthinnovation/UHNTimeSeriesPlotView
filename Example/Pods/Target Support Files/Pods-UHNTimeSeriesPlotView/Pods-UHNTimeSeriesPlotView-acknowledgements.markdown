@@ -1,10 +1,6 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## UHNDebug
-
-Copyright 2014 University Health Network. All rights reserved.
-
 ## UHNTimeSeriesPlotView
 
 Copyright (c) 2015 Nathaniel Hamming <nathaniel.hamming@gmail.com>

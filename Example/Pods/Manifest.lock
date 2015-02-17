@@ -5,7 +5,6 @@ PODS:
     - FBSnapshotTestCase
   - FBSnapshotTestCase (1.5)
   - Specta (0.3.0.beta1)
-  - UHNDebug (0.1.0)
   - UHNTimeSeriesPlotView (0.1.0)
 
 DEPENDENCIES:
@@ -13,15 +12,12 @@ DEPENDENCIES:
   - Expecta+Snapshots
   - FBSnapshotTestCase
   - Specta (from `https://github.com/specta/specta.git`, tag `v0.3.0.beta1`)
-  - UHNDebug (from `git@github.ehealthinnovation.org:PHIT/UHNDebug.git`)
   - UHNTimeSeriesPlotView (from `../`)
 
 EXTERNAL SOURCES:
   Specta:
     :git: https://github.com/specta/specta.git
     :tag: v0.3.0.beta1
-  UHNDebug:
-    :git: git@github.ehealthinnovation.org:PHIT/UHNDebug.git
   UHNTimeSeriesPlotView:
     :path: ../
 
@@ -29,16 +25,12 @@ CHECKOUT OPTIONS:
   Specta:
     :git: https://github.com/specta/specta.git
     :tag: v0.3.0.beta1
-  UHNDebug:
-    :commit: d9c79b9fc74af2f9da0772c587590e93b18c57e9
-    :git: git@github.ehealthinnovation.org:PHIT/UHNDebug.git
 
 SPEC CHECKSUMS:
   Expecta: 03aabd0a89d8dea843baecb19a7fd7466a69a31d
   Expecta+Snapshots: 4a56b9411c6ed156987072e52c39de67d864015a
   FBSnapshotTestCase: e2914fbaabccea1dcc773d6a16b1c24540642488
   Specta: 63e8ac8e07db6675c7096d37f77a266a1be4c02d
-  UHNDebug: c0f53cfc5234c9ddf4cdd8106c03cd788afd9ca3
-  UHNTimeSeriesPlotView: 791a81e182913df55801b8f3c74296bd0cfe5a73
+  UHNTimeSeriesPlotView: 490a0f88e0bf8d51dc59c90a3f9c93be06630100
 
 COCOAPODS: 0.35.0
