@@ -31,6 +31,6 @@ SPEC CHECKSUMS:
   Expecta+Snapshots: 4a56b9411c6ed156987072e52c39de67d864015a
   FBSnapshotTestCase: e2914fbaabccea1dcc773d6a16b1c24540642488
   Specta: 63e8ac8e07db6675c7096d37f77a266a1be4c02d
-  UHNTimeSeriesPlotView: 490a0f88e0bf8d51dc59c90a3f9c93be06630100
+  UHNTimeSeriesPlotView: ad00946137c2d6e6a7514b11706877ec5e9b4a5c
 
 COCOAPODS: 0.35.0
