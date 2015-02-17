@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.homepage         = "http://github.com/uhnmdi/UHNTimeSeriesPlotView"
   s.license          = 'MIT'
   s.author           = { "Nathaniel Hamming" => "nathaniel.hamming@gmail.com" }
-  s.source           = { :git => "http://github.com/uhnmdi/UHNTimeSeriesPlotView.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/uhnmdi/UHNTimeSeriesPlotView.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/NAteHAm80'
 
   s.platform     = :ios, '7.0'

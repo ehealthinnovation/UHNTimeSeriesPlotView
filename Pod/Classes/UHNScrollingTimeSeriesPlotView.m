@@ -11,7 +11,6 @@
 #import "UHNXRealScale.h"
 #import "UHNYRealScale.h"
 #import "UHNGraphGridLines.h"
-#import "UHNDebug.h"
 
 @interface UHNScrollingTimeSeriesPlotView() <UIScrollViewDelegate>
 @property (nonatomic, strong) IBOutlet UIScrollView *container;
